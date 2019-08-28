@@ -23,4 +23,4 @@ Imports:
     cowplot,
     readxl,
     ggridges
-    
+RoxygenNote: 6.1.1

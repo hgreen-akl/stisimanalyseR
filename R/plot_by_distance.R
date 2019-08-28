@@ -6,6 +6,10 @@
 #' @param x A dataframe of the drivesim parameters
 #'
 #' @return A faceted figure of all variables recorded over distance
+#'
+#' @importFrom tidyr gather
+#' @import ggplot2
+#' @export
 
 plot_by_distance <- function(x){
 

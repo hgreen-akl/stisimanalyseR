@@ -6,7 +6,13 @@
 #'
 #' @param x A filename of a raw .Dat file
 #'
-#' @return NONE - instead saves two files of tidied data, "*_trimed.csv" and "
+#' @return NONE - instead saves two files of tidied data, "*_trimmed.csv" and "_summary.txt"
+#'
+#' @importFrom  magrittr %>%
+#' @import utils
+#' @import stringr
+#'
+#' @export
 
 clean_dat_file <- function (x) {
     #creates the destination output to within a new sub folder called trimmed
