@@ -9,7 +9,7 @@
 #'
 #' @import utils
 #' @importFrom magrittr %>%
-#' @importFrom dplyr if_else
+#' @importFrom dplyr if_else mutate
 #' @importFrom tibble as_tibble
 #' @importFrom readr read_csv
 #' @import stringr
