@@ -12,7 +12,7 @@ save_checked_data(x, file_to_check)
 \item{file_to_check}{The filename of the file being checked}
 }
 \value{
-A faceted figure of all variables recorded over distance
+None - Saves a csv of "_checked.csv"
 }
 \description{
 Plots raw trimmed data by time for visual data check

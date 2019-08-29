@@ -1,6 +1,6 @@
 #' Plots raw trimmed data by time for visual data check
 #'
-#'
+#' @name plot_by_time
 #'
 #'
 #' @param x A dataframe of the drivesim parameters
@@ -9,8 +9,8 @@
 #'
 #' @importFrom tidyr gather
 #' @import ggplot2
-#' @export
 #'
+#' @export
 
 if(getRversion() >= "2.15.1")  utils::globalVariables(c("Longitudinal_Veloc", "Road_Curve", "Elapsed_Time", "Metric"))
 

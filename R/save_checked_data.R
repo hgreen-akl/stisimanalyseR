@@ -1,12 +1,12 @@
 #' Plots raw trimmed data by time for visual data check
 #'
-#'
+#' @name save_checked_data
 #'
 #'
 #' @param x A dataframe of the drivesim parameters
 #' @param file_to_check The filename of the file being checked
 #'
-#' @return A faceted figure of all variables recorded over distance
+#' @return None - Saves a csv of "_checked.csv"
 #'
 #' @import utils
 #' @importFrom magrittr %>%
@@ -23,7 +23,7 @@ save_checked_data <- function(x, file_to_check) {
     code <- paste0(x$ID[1] %>% as.character(),"_" ,x$Run_Number[1] %>% as.character())
 
     if(existing_file == TRUE) {
-        overwrite <- menu(c("Overwrite","Stop"), graphics = TRUE, title = "trimmed csv data already exists do you wish to overwrite") %>% as.numeric()
+        overwrite <- menu(c("Overwrite","Stop"), graphics = TRUE, title = "checked csv data already exists do you wish to overwrite") %>% as.numeric()
         if(overwrite == 2) {
             stop("ERROR:: file already exists")
         } else {

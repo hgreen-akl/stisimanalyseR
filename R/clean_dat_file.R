@@ -1,8 +1,9 @@
 #' Cleans a Raw Dat file
 #'
-#'
 #' After  from STISIM and returns two files. 1. a csv file ending in "_trimmed.csv", and a txt
 #' file containing a summary of traffic violations and other notable events
+#' @name clean_dat_file
+#'
 #'
 #' @param x A filename of a raw .Dat file
 #'
