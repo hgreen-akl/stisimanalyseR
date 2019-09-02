@@ -23,7 +23,7 @@ clean_dat_file <- function (x) {
     destination_basename <- basename(x) %>% str_replace(".Dat", "_trimmed.csv")
 
     destination_fname <- paste0(destination_dirname,destination_basename)
-    dir.create(destination_basename, showWarnings = FALSE)
+    dir.create(destination_dirname, showWarnings = FALSE)
 
     if(length(list.files(destination_fname)) >= 1) {
         print(paste(x , "is Trimmed"))
