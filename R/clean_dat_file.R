@@ -24,7 +24,7 @@ clean_dat_file <- function (x) {
 
     destination_fname <- paste0(paste0(destination_dirname,"/"),destination_basename)
 
-    dir.create(file.path(destination_fname), showWarnings = FALSE)
+    dir.create(destination_dirname, showWarnings = FALSE)
 
     if(length(list.files(destination_fname)) >= 1) {
         print(paste(x , "is Trimmed"))
