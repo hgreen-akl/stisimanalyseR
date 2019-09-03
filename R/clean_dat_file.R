@@ -17,12 +17,14 @@
 
 clean_dat_file <- function (x) {
     #creates the destination output to within a new sub folder called trimmed
-    destination_dirname <- paste0(dirname(x),"/trimmed/")
+    destination_dirname <- paste0(dirname(x),"/trimmed")
 
     #changes the output file name from .Dat to a .csv
     destination_basename <- basename(x) %>% str_replace(".Dat", "_trimmed.csv")
 
-    destination_fname <- paste0(destination_dirname,destination_basename)
+    destination_fname <- paste0(paste0(destination_dirname,"/"),destination_basename)
+
+    dir.create(destination_dirname, showWarnings = FALSE)
 
     if(length(list.files(destination_fname)) >= 1) {
         print(paste(x , "is Trimmed"))

@@ -23,5 +23,6 @@ Imports:
     signal,
     cowplot,
     readxl,
-    ggridges
+    ggridges,
+    purrr
 RoxygenNote: 6.1.1
