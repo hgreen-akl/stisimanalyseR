@@ -4,12 +4,12 @@
 \alias{save_checked_data}
 \title{Plots raw trimmed data by time for visual data check}
 \usage{
-save_checked_data(x, file_to_check)
+save_checked_data(x, save_location)
 }
 \arguments{
 \item{x}{A dataframe of the drivesim parameters}
 
-\item{file_to_check}{The filename of the file being checked}
+\item{save_location}{The filename of the file being checked}
 }
 \value{
 None - Saves a csv of "_checked.csv"
