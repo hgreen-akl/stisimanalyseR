@@ -19,7 +19,7 @@ save_checked_data <- function(x, save_location) {
 
     existing_file <- if_else(file.exists(save_location), TRUE, FALSE)
 
-    code <- paste0(x$ID[1] %>% as.character(),"_" ,x$Run_Number[1] %>% as.character())
+    code <- basename(save_location)
 
     if(existing_file == TRUE) {
         overwrite <- menu(c("Overwrite","Stop"), graphics = TRUE, title = "checked csv data already exists do you wish to overwrite") %>% as.numeric()
