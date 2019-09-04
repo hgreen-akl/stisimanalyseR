@@ -24,7 +24,8 @@ load_trimmed <- function(x) {
     if (existing_file == TRUE) {
         recheck <- menu(c("Recheck","Stop"), graphics = TRUE, title = paste(basename(x), "checked csv data already exists do you wish to overwrite")) %>% as.numeric()
         if(recheck == 2) {
-            stop("ERROR:: file already exists")
+            print("skipping file")
+            next()
         }
     }
     csv_to_check <- read_csv(x, col_names = TRUE) %>% data.frame() %>% as_tibble()

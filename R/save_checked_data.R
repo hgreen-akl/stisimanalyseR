@@ -4,7 +4,11 @@
 #'
 #'
 #' @param x A dataframe of the drivesim parameters
+<<<<<<< HEAD
 #' @param save_location The filename of the file being checked
+=======
+#' @param trimmed_filename The filename of the file being checked
+>>>>>>> 81cc21f10d6a04d1ba43fa6dc76d581c67462beb
 #'
 #' @return None - Saves a csv of "_checked.csv"
 #'
@@ -13,6 +17,7 @@
 #' @importFrom dplyr if_else
 #' @import stringr
 #' @export
+
 
 save_checked_data <- function(x, save_location) {
 
