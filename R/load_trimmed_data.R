@@ -29,6 +29,4 @@ load_trimmed <- function(x) {
         }
     }
     csv_to_check <- read_csv(x, col_names = TRUE) %>% data.frame() %>% as_tibble()
-    csv_to_check <- csv_to_check %>% mutate(session = rep("F",times = nrow(csv_to_check)) ,
-                                            scenario = rep("Country",times = nrow(csv_to_check)))
-}
+    }
