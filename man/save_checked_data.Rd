@@ -9,7 +9,7 @@ save_checked_data(x, save_location)
 \arguments{
 \item{x}{A dataframe of the drivesim parameters}
 
-\item{save_location}{The filename of the file being checked}
+\item{save_location}{The filename you want to save the data as}
 }
 \value{
 None - Saves a csv of "_checked.csv"

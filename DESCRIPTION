@@ -1,5 +1,5 @@
 Package: stisimanalyseR
-Title: What the Package Does (One Line, Title Case)
+Title: Package of analyseis functions for STISIM data
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "First",

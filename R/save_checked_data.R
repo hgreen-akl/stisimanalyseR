@@ -4,11 +4,7 @@
 #'
 #'
 #' @param x A dataframe of the drivesim parameters
-<<<<<<< HEAD
-#' @param save_location The filename of the file being checked
-=======
-#' @param trimmed_filename The filename of the file being checked
->>>>>>> 81cc21f10d6a04d1ba43fa6dc76d581c67462beb
+#' @param save_location The filename you want to save the data as
 #'
 #' @return None - Saves a csv of "_checked.csv"
 #'
