@@ -17,7 +17,7 @@
 
 load_trimmed <- function(x) {
 
-    save_location <- str_replace(x, "trimmed", "checked")
+    save_location <- str_replace(x, "_trimmed", "_checked")
 
     existing_file <- if_else(file.exists(save_location), TRUE, FALSE)
 
